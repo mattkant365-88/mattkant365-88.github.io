@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support Mattes Mobile Power Wash</title>
+  <style>
+    :root {
+      --ink: #102033;
+      --muted: #5b6b7c;
+      --blue: #0b63ce;
+      --blue-dark: #084b9d;
+      --light: #f4f8fc;
+      --white: #ffffff;
+      --green: #16a05d;
+      --border: #dbe5ef;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--ink);
+      background: var(--light);
+      line-height: 1.6;
+    }
+    .hero {
+      background: linear-gradient(135deg, #0b63ce, #063b7d);
+      color: white;
+      padding: 72px 20px 64px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.14);
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: .3px;
+      margin-bottom: 18px;
+    }
+    h1 {
+      font-size: clamp(38px, 7vw, 68px);
+      line-height: 1.05;
+      margin: 0 auto 18px;
+      max-width: 900px;
+    }
+    .hero p {
+      max-width: 720px;
+      margin: 0 auto 28px;
+      font-size: 20px;
+      opacity: .96;
+    }
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      font-weight: 800;
+      padding: 15px 24px;
+      border-radius: 12px;
+      margin: 6px;
+      transition: transform .15s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-cash { background: #20c878; color: #062d1b; }
+    .btn-light { background: white; color: var(--blue-dark); }
+    .wrap { max-width: 1050px; margin: auto; padding: 48px 20px; }
+    .goal {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      box-shadow: 0 8px 30px rgba(16,32,51,.06);
+      margin-top: -35px;
+      position: relative;
+    }
+    .goal-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      align-items: end;
+      flex-wrap: wrap;
+    }
+    .goal-number {
+      font-size: 42px;
+      font-weight: 900;
+      color: var(--blue);
+    }
+    .progress {
+      height: 16px;
+      background: #e7eef6;
+      border-radius: 999px;
+      overflow: hidden;
+      margin-top: 18px;
+    }
+    .progress span {
+      display: block;
+      width: 0%;
+      height: 100%;
+      background: var(--green);
+    }
+    h2 { font-size: 32px; margin: 0 0 14px; }
+    .section { margin-top: 52px; }
+    .section p { color: var(--muted); font-size: 17px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+    }
+    .card strong { display: block; font-size: 18px; margin-bottom: 7px; }
+    .donate {
+      background: white;
+      border-radius: 22px;
+      padding: 38px 24px;
+      text-align: center;
+      border: 1px solid var(--border);
+      box-shadow: 0 8px 30px rgba(16,32,51,.06);
+    }
+    .cashtag {
+      display: inline-block;
+      margin: 12px 0 18px;
+      padding: 13px 18px;
+      background: #eefaf4;
+      color: #08753f;
+      border-radius: 12px;
+      font-size: 25px;
+      font-weight: 900;
+    }
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 30px 20px 45px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="badge">MISSOURI • LOCAL SMALL BUSINESS</div>
+    <h1>Help Launch Mattes Mobile Power Wash</h1>
+    <p>
+      I’m building a professional mobile power-washing business and raising
+      <strong>$50,000 in donations</strong> to help get the operation off the ground.
+    </p>
+    <a class="btn btn-cash" href="https://cash.app/$Str8success88" target="_blank" rel="noopener">
+      Donate on Cash App
+    </a>
+    <a class="btn btn-light" href="#story">See the Plan</a>
+  </header>
+
+  <main class="wrap">
+    <section class="goal">
+      <div class="goal-top">
+        <div>
+          <div style="color:#5b6b7c;font-weight:700;">DONATION GOAL</div>
+          <div class="goal-number">$50,000</div>
+        </div>
+        <div style="color:#5b6b7c;">Every contribution helps move the launch forward.</div>
+      </div>
+      <div class="progress"><span></span></div>
+    </section>
+
+    <section class="section" id="story">
+      <h2>The Mission</h2>
+      <p>
+        Mattes Mobile Power Wash is being built around hands-on experience in
+        professional power washing and pool-related cleaning. The goal is to
+        turn that experience into an independent mobile service that can serve
+        homeowners and businesses throughout Missouri.
+      </p>
+      <p>
+        Donations will help create the equipment, transportation, insurance,
+        marketing, and working-capital foundation needed to start strong and
+        grow responsibly.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>What Donations Can Help Fund</h2>
+      <div class="cards">
+        <div class="card">
+          <strong>Equipment</strong>
+          Professional pressure-washing equipment, hoses, surface cleaners, and supplies.
+        </div>
+        <div class="card">
+          <strong>Mobile Setup</strong>
+          Vehicle/trailer needs and the equipment setup required to bring the service to customers.
+        </div>
+        <div class="card">
+          <strong>Business Setup</strong>
+          Insurance, registration, permits, and other launch expenses.
+        </div>
+        <div class="card">
+          <strong>Marketing</strong>
+          Website, signs, advertising, and customer-acquisition efforts.
+        </div>
+        <div class="card">
+          <strong>Working Capital</strong>
+          Fuel, maintenance, cleaning supplies, and early operating expenses.
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Why Your Support Matters</h2>
+      <p>
+        Starting a service business from the ground up takes equipment and
+        capital before the first customer can be served. A donation can help
+        close that gap and give Mattes Mobile Power Wash a real opportunity to
+        launch, earn revenue, reinvest, and eventually create jobs.
+      </p>
+    </section>
+
+    <section class="section donate" id="donate">
+      <h2>Support the Launch</h2>
+      <p>
+        If you’d like to help Mattes Mobile Power Wash get started, donations
+        can be sent directly through Cash App.
+      </p>
+      <div class="cashtag">$Str8success88</div><br>
+      <a class="btn btn-cash" href="https://cash.app/$Str8success88" target="_blank" rel="noopener">
+        Donate Now
+      </a>
+      <p style="font-size:13px;margin-top:20px;">
+        Donations are voluntary contributions to support the business launch.
+        They do not purchase ownership and do not guarantee a financial return.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Mattes Mobile Power Wash • Missouri<br>
+    Built to support a local small-business launch.
+  </footer>
+
+</body>
+</html>
